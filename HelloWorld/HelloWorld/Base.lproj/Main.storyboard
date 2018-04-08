@@ -18,21 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-Om-PRy">
-                                <rect key="frame" x="10" y="125" width="288" height="64"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="O1q-5z-2fA">
+                                <rect key="frame" x="0.0" y="41" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-Om-PRy">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.27131447517424356" blue="0.13772446540180405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Hello World">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJ0-pO-AZe"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of caregiver" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GYc-5P-NfQ">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cw5-Om-PRy" secondAttribute="trailing" id="UQA-UL-6cY"/>
+                                    <constraint firstItem="GYc-5P-NfQ" firstAttribute="top" secondItem="cw5-Om-PRy" secondAttribute="bottom" constant="10" id="eIQ-9L-Qwq"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYc-5P-NfQ" secondAttribute="trailing" id="orw-Hv-SwP"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dc-r8-4AV">
+                                <rect key="frame" x="7" y="119" width="297" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.27131447517424356" blue="0.13772446540180405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Hello World">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJ0-pO-AZe"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O1q-5z-2fA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="fqJ-KV-10F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1q-5z-2fA" secondAttribute="trailing" id="mfj-yO-5Ch"/>
+                            <constraint firstItem="O1q-5z-2fA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xdZ-Ve-Ggd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageview" destination="9dc-r8-4AV" id="Ox4-5Y-QR0"/>
+                        <outlet property="nametextfield" destination="GYc-5P-NfQ" id="Fzq-iG-hDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

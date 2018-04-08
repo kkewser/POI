@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019EFDC215567496DE9A47EC /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */; };
 		B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC39F2072920E0024BF69 /* AppDelegate.swift */; };
 		B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC3A12072920E0024BF69 /* ViewController.swift */; };
 		B9DCC3A52072920E0024BF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A32072920E0024BF69 /* Main.storyboard */; };
 		B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A62072920E0024BF69 /* Assets.xcassets */; };
 		B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */; };
+		B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */; };
+		B9DCC57720752B8E0024BF69 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57620752B8E0024BF69 /* image2.jpg */; };
+		B9DCC57920752BAF0024BF69 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57820752BAF0024BF69 /* image1.jpg */; };
+		B9DCC57B20752BB80024BF69 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57A20752BB80024BF69 /* image3.jpg */; };
+		B9DCC57E20752BD20024BF69 /* image8.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57D20752BD20024BF69 /* image8.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF56551C7656ABFDCBF606 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		B9DCC39C2072920E0024BF69 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DCC39F2072920E0024BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9DCC3A12072920E0024BF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,13 @@
 		B9DCC3A62072920E0024BF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9DCC3A92072920E0024BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DCC3AB2072920E0024BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9DCC57620752B8E0024BF69 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		B9DCC57820752BAF0024BF69 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		B9DCC57A20752BB80024BF69 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		B9DCC57C20752BCD0024BF69 /* image4.jp2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image4.jp2; sourceTree = "<group>"; };
+		B9DCC57D20752BD20024BF69 /* image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image8.png; sourceTree = "<group>"; };
+		EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019EFDC215567496DE9A47EC /* Pods_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011AD94C4A02EFA1D7A0A803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9DCC3932072920E0024BF69 = {
 			isa = PBXGroup;
 			children = (
 				B9DCC39E2072920E0024BF69 /* HelloWorld */,
 				B9DCC39D2072920E0024BF69 /* Products */,
+				DDEFE6BD04AD06035E1B7FE2 /* Pods */,
+				011AD94C4A02EFA1D7A0A803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +86,23 @@
 				B9DCC3A62072920E0024BF69 /* Assets.xcassets */,
 				B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */,
 				B9DCC3AB2072920E0024BF69 /* Info.plist */,
+				B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */,
+				B9DCC57820752BAF0024BF69 /* image1.jpg */,
+				B9DCC57620752B8E0024BF69 /* image2.jpg */,
+				B9DCC57A20752BB80024BF69 /* image3.jpg */,
+				B9DCC57C20752BCD0024BF69 /* image4.jp2 */,
+				B9DCC57D20752BD20024BF69 /* image8.png */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		DDEFE6BD04AD06035E1B7FE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */,
+				ACCF56551C7656ABFDCBF606 /* Pods-HelloWorld.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9DCC3AE2072920E0024BF69 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
+				32F9D70CB80789158247613F /* [CP] Check Pods Manifest.lock */,
 				B9DCC3982072920E0024BF69 /* Sources */,
 				B9DCC3992072920E0024BF69 /* Frameworks */,
 				B9DCC39A2072920E0024BF69 /* Resources */,
+				72F009724027570A6C370A0B /* [CP] Embed Pods Frameworks */,
+				A3EA1193A9FFBFD14D62C484 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,13 +167,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DCC57E20752BD20024BF69 /* image8.png in Resources */,
 				B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */,
+				B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */,
 				B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */,
+				B9DCC57720752B8E0024BF69 /* image2.jpg in Resources */,
 				B9DCC3A52072920E0024BF69 /* Main.storyboard in Resources */,
+				B9DCC57B20752BB80024BF69 /* image3.jpg in Resources */,
+				B9DCC57920752BAF0024BF69 /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F9D70CB80789158247613F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F009724027570A6C370A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3EA1193A9FFBFD14D62C484 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9DCC3982072920E0024BF69 /* Sources */ = {
@@ -272,6 +381,7 @@
 		};
 		B9DCC3AF2072920E0024BF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +396,7 @@
 		};
 		B9DCC3B02072920E0024BF69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCF56551C7656ABFDCBF606 /* Pods-HelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
