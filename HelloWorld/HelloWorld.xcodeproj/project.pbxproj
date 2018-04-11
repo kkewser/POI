@@ -14,10 +14,6 @@
 		B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A62072920E0024BF69 /* Assets.xcassets */; };
 		B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */; };
 		B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */; };
-		B9DCC57720752B8E0024BF69 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57620752B8E0024BF69 /* image2.jpg */; };
-		B9DCC57920752BAF0024BF69 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57820752BAF0024BF69 /* image1.jpg */; };
-		B9DCC57B20752BB80024BF69 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57A20752BB80024BF69 /* image3.jpg */; };
-		B9DCC57E20752BD20024BF69 /* image8.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57D20752BD20024BF69 /* image8.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +27,6 @@
 		B9DCC3A92072920E0024BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DCC3AB2072920E0024BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B9DCC57620752B8E0024BF69 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
-		B9DCC57820752BAF0024BF69 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
-		B9DCC57A20752BB80024BF69 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
-		B9DCC57C20752BCD0024BF69 /* image4.jp2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image4.jp2; sourceTree = "<group>"; };
-		B9DCC57D20752BD20024BF69 /* image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image8.png; sourceTree = "<group>"; };
 		EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,11 +78,6 @@
 				B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */,
 				B9DCC3AB2072920E0024BF69 /* Info.plist */,
 				B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */,
-				B9DCC57820752BAF0024BF69 /* image1.jpg */,
-				B9DCC57620752B8E0024BF69 /* image2.jpg */,
-				B9DCC57A20752BB80024BF69 /* image3.jpg */,
-				B9DCC57C20752BCD0024BF69 /* image4.jp2 */,
-				B9DCC57D20752BD20024BF69 /* image8.png */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -167,14 +153,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9DCC57E20752BD20024BF69 /* image8.png in Resources */,
 				B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */,
 				B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */,
 				B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */,
-				B9DCC57720752B8E0024BF69 /* image2.jpg in Resources */,
 				B9DCC3A52072920E0024BF69 /* Main.storyboard in Resources */,
-				B9DCC57B20752BB80024BF69 /* image3.jpg in Resources */,
-				B9DCC57920752BAF0024BF69 /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
