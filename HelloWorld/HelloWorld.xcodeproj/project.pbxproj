@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		019EFDC215567496DE9A47EC /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */; };
+		B938F930208104A600683235 /* FaceClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B938F92F208104A600683235 /* FaceClassifier1.mlmodel */; };
 		B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC39F2072920E0024BF69 /* AppDelegate.swift */; };
 		B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC3A12072920E0024BF69 /* ViewController.swift */; };
 		B9DCC3A52072920E0024BF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A32072920E0024BF69 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCF56551C7656ABFDCBF606 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		B938F92F208104A600683235 /* FaceClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FaceClassifier1.mlmodel; sourceTree = "<group>"; };
 		B9DCC39C2072920E0024BF69 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DCC39F2072920E0024BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9DCC3A12072920E0024BF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		B9DCC39E2072920E0024BF69 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				B938F92F208104A600683235 /* FaceClassifier1.mlmodel */,
 				B9DCC39F2072920E0024BF69 /* AppDelegate.swift */,
 				B9DCC3A12072920E0024BF69 /* ViewController.swift */,
 				B9DCC3A32072920E0024BF69 /* Main.storyboard */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B938F930208104A600683235 /* FaceClassifier1.mlmodel in Sources */,
 				B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */,
 				B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */,
 			);
