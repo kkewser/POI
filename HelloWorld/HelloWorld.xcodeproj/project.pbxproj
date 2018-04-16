@@ -15,6 +15,7 @@
 		B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A62072920E0024BF69 /* Assets.xcassets */; };
 		B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */; };
 		B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */; };
+		C243842C2084D3350026F243 /* Takephoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243842B2084D3350026F243 /* Takephoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B9DCC3A92072920E0024BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DCC3AB2072920E0024BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C243842B2084D3350026F243 /* Takephoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Takephoto.swift; sourceTree = "<group>"; };
 		EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		B9DCC39E2072920E0024BF69 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				C243842B2084D3350026F243 /* Takephoto.swift */,
 				B938F92F208104A600683235 /* FaceClassifier1.mlmodel */,
 				B9DCC39F2072920E0024BF69 /* AppDelegate.swift */,
 				B9DCC3A12072920E0024BF69 /* ViewController.swift */,
@@ -124,7 +127,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = kewser;
 				TargetAttributes = {
 					B9DCC39B2072920E0024BF69 = {
@@ -232,6 +235,7 @@
 			files = (
 				B938F930208104A600683235 /* FaceClassifier1.mlmodel in Sources */,
 				B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */,
+				C243842C2084D3350026F243 /* Takephoto.swift in Sources */,
 				B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +276,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -279,6 +284,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -329,6 +335,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -336,6 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
