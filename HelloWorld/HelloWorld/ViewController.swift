@@ -112,6 +112,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             if let buffer = image.buffer(with: CGSize(width:224, height:224)) {
                 guard let prediction = try? mlModel.prediction(image: buffer) else {fatalError("Unexpected runtime error")}
                 descriptionLbl.text = prediction.facerecognition
+                self.ref?.child("Result").setValue(descriptionLbl.text)
                 print(prediction.facerecognitionProbability)
             }else{
                 print("failed buffer")
