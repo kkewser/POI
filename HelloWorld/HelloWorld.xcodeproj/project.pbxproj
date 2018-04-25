@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		019EFDC215567496DE9A47EC /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */; };
+		B917FAD320860DEE00B65D9F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917FAD220860DEE00B65D9F /* FirstViewController.swift */; };
+		B917FAD520860FC500B65D9F /* TakephotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917FAD420860FC500B65D9F /* TakephotoViewController.swift */; };
+		B917FAD720879F1C00B65D9F /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B917FAD620879F1C00B65D9F /* camera.png */; };
+		B917FAD920879F2A00B65D9F /* photolibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B917FAD820879F2A00B65D9F /* photolibrary.jpg */; };
+		B917FADB20879F5400B65D9F /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = B917FADA20879F5400B65D9F /* images.png */; };
+		B917FADD20879FCD00B65D9F /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = B917FADC20879FCD00B65D9F /* new.png */; };
+		B917FADF2087A03A00B65D9F /* new1.png in Resources */ = {isa = PBXBuildFile; fileRef = B917FADE2087A03A00B65D9F /* new1.png */; };
+		B917FAE12087A07900B65D9F /* new_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B917FAE02087A07800B65D9F /* new_photo.jpg */; };
 		B938F930208104A600683235 /* FaceClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B938F92F208104A600683235 /* FaceClassifier1.mlmodel */; };
 		B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC39F2072920E0024BF69 /* AppDelegate.swift */; };
 		B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCC3A12072920E0024BF69 /* ViewController.swift */; };
@@ -20,6 +28,14 @@
 /* Begin PBXFileReference section */
 		9D849DF36D4DF68178DE4962 /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCF56551C7656ABFDCBF606 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		B917FAD220860DEE00B65D9F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B917FAD420860FC500B65D9F /* TakephotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakephotoViewController.swift; sourceTree = "<group>"; };
+		B917FAD620879F1C00B65D9F /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		B917FAD820879F2A00B65D9F /* photolibrary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photolibrary.jpg; sourceTree = "<group>"; };
+		B917FADA20879F5400B65D9F /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		B917FADC20879FCD00B65D9F /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		B917FADE2087A03A00B65D9F /* new1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new1.png; sourceTree = "<group>"; };
+		B917FAE02087A07800B65D9F /* new_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_photo.jpg; sourceTree = "<group>"; };
 		B938F92F208104A600683235 /* FaceClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FaceClassifier1.mlmodel; sourceTree = "<group>"; };
 		B9DCC39C2072920E0024BF69 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DCC39F2072920E0024BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +93,16 @@
 				B9DCC39F2072920E0024BF69 /* AppDelegate.swift */,
 				B9DCC3A12072920E0024BF69 /* ViewController.swift */,
 				B9DCC3A32072920E0024BF69 /* Main.storyboard */,
+				B917FAD220860DEE00B65D9F /* FirstViewController.swift */,
+				B917FAD420860FC500B65D9F /* TakephotoViewController.swift */,
 				B9DCC3A62072920E0024BF69 /* Assets.xcassets */,
 				B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */,
+				B917FADA20879F5400B65D9F /* images.png */,
+				B917FAE02087A07800B65D9F /* new_photo.jpg */,
+				B917FADC20879FCD00B65D9F /* new.png */,
+				B917FADE2087A03A00B65D9F /* new1.png */,
+				B917FAD820879F2A00B65D9F /* photolibrary.jpg */,
+				B917FAD620879F1C00B65D9F /* camera.png */,
 				B9DCC3AB2072920E0024BF69 /* Info.plist */,
 				B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */,
 			);
@@ -158,8 +182,14 @@
 			files = (
 				B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */,
 				B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */,
+				B917FADF2087A03A00B65D9F /* new1.png in Resources */,
+				B917FAD920879F2A00B65D9F /* photolibrary.jpg in Resources */,
 				B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */,
+				B917FAE12087A07900B65D9F /* new_photo.jpg in Resources */,
+				B917FADD20879FCD00B65D9F /* new.png in Resources */,
+				B917FADB20879F5400B65D9F /* images.png in Resources */,
 				B9DCC3A52072920E0024BF69 /* Main.storyboard in Resources */,
+				B917FAD720879F1C00B65D9F /* camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +262,9 @@
 			files = (
 				B938F930208104A600683235 /* FaceClassifier1.mlmodel in Sources */,
 				B9DCC3A22072920E0024BF69 /* ViewController.swift in Sources */,
+				B917FAD520860FC500B65D9F /* TakephotoViewController.swift in Sources */,
 				B9DCC3A02072920E0024BF69 /* AppDelegate.swift in Sources */,
+				B917FAD320860DEE00B65D9F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV88J8G2VS;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kewser.HelloWorld;
@@ -386,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV88J8G2VS;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kewser.HelloWorld;

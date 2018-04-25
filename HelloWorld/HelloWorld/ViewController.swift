@@ -12,7 +12,7 @@ import CoreML
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     // Add the model used for face recognition
-    let mlModel = FaceClassifier1()
+  /*  let mlModel = FaceClassifier1()
     
     var importButton:UIButton = {
         let btn = UIButton(type: .system)
@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         lbl.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/1.5)
         return lbl
     }()
-    
+  */
     //MARK:properties
     
     @IBOutlet weak var imageview: UIImageView!
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        importButton.addTarget(self, action: #selector(importFromCameraRoll), for: .touchUpInside)
+      /*  importButton.addTarget(self, action: #selector(importFromCameraRoll), for: .touchUpInside)
         // For the image
         self.view.addSubview(previewImg)
         // Label for  the name
@@ -64,15 +64,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // button to recognize the image
         self.view.addSubview(importButton)
         
-        
+       */
         // Get a reference to the storage service using the default Firebase App
        // set the database reference
          ref = Database.database().reference()
-         ref?.child("Kewser").observe(.childAdded, with: { (snapshot) in
+        ref?.child("Kewser").observe(.childAdded, with: { (snapshot) in
             
-            var name="name"
-            var image="image"
-            var record="record"
+           var name="name"
+           var image="image"
+           // var record="record"
            
             if (( image.elementsEqual(snapshot.key)) == true){
                 self.url=snapshot.value as? String
@@ -87,8 +87,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
           
         })
-      
+     
     }
+ 
     
 
     override func didReceiveMemoryWarning() {
@@ -96,7 +97,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
     // Imoprt the image to predect it
-    @objc func importFromCameraRoll() {
+   /* @objc func importFromCameraRoll() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -118,7 +119,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
         }
         dismiss(animated:true, completion: nil)
-    }
+    }*/
     @IBAction func showMessage(sender: UIButton){
         
         if let urls = URL(string: url!){
@@ -140,7 +141,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
 }
-extension UIImage {
+/*extension UIImage {
     func buffer(with size:CGSize) -> CVPixelBuffer? {
         if let image = self.cgImage {
             let frameSize = size
@@ -163,3 +164,4 @@ extension UIImage {
         }
     }
 }
+*/

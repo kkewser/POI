@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LyW-LW-qgQ">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="O1q-5z-2fA">
-                                <rect key="frame" x="0.0" y="41" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-Om-PRy">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.27131447517424356" blue="0.13772446540180405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Hello World">
                                             <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of caregiver" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GYc-5P-NfQ">
-                                        <rect key="frame" x="0.0" y="30" width="320" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -64,7 +64,181 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.5" y="32.74647887323944"/>
+            <point key="canvasLocation" x="1579" y="5"/>
+        </scene>
+        <!--Takephoto View Controller-->
+        <scene sceneID="qst-6R-7aE">
+            <objects>
+                <viewController id="LyW-LW-qgQ" customClass="TakephotoViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffS-iY-bNr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="J8F-k3-bqR">
+                                <rect key="frame" x="65" y="245" width="275" height="210.33333333333337"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="31" translatesAutoresizingMaskIntoConstraints="NO" id="9Rm-fA-hvR">
+                                        <rect key="frame" x="103" y="0.0" width="69.333333333333314" height="37.666666666666664"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="POI">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="33" name="Georgia-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-Xd-GzY">
+                                        <rect key="frame" x="76" y="93.666666666666686" width="123" height="30.333333333333329"/>
+                                        <color key="backgroundColor" red="0.67634537560599195" green="0.62584314346313474" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="new1.png">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Camera">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="26" name=".SFNSDisplay"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="highlighted">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Camera:" destination="LyW-LW-qgQ" eventType="touchUpInside" id="bC9-6e-kQS"/>
+                                            <segue destination="hQD-Ka-roP" kind="show" identifier="ToFirst" id="Uvy-aN-7QV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isl-rh-0LX">
+                                        <rect key="frame" x="46" y="180" width="183" height="30.333333333333343"/>
+                                        <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="new_photo.jpg">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Photo Library">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="26"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="PhotoLibrary:" destination="LyW-LW-qgQ" eventType="touchUpInside" id="YaY-6r-a0J"/>
+                                            <segue destination="hQD-Ka-roP" kind="show" identifier="PhotoToFR" id="mHe-Oj-hVH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.24382740259170532" magenta="0.24547533690929413" yellow="0.41313261134283885" black="0.34126533717441726" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J8F-k3-bqR" firstAttribute="centerY" secondItem="pcS-dl-zTU" secondAttribute="centerY" constant="-60.75" id="4uq-s6-spm"/>
+                            <constraint firstItem="J8F-k3-bqR" firstAttribute="centerX" secondItem="pcS-dl-zTU" secondAttribute="centerX" constant="15" id="T8e-Vz-rEH"/>
+                            <constraint firstItem="J8F-k3-bqR" firstAttribute="leading" secondItem="pcS-dl-zTU" secondAttribute="leading" constant="65" id="fEW-gO-zSf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pcS-dl-zTU"/>
+                    </view>
+                    <connections>
+                        <outlet property="Camera" destination="Hrg-Xd-GzY" id="bNx-UK-HRk"/>
+                        <outlet property="PhotoLibrary" destination="Isl-rh-0LX" id="d4d-SJ-SEy"/>
+                        <segue destination="hQD-Ka-roP" kind="show" identifier="Takephoto" id="LNA-Ie-WmT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufh-IV-nos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.375" y="3.1690140845070425"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="P9E-ye-6KV">
+            <objects>
+                <viewController id="hQD-Ka-roP" customClass="FirstViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="pkR-Pd-g7O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-qJ-f7I">
+                                <rect key="frame" x="75" y="99" width="224" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="LZi-7Y-e7s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-oR-Pc1">
+                                <rect key="frame" x="10" y="734" width="75" height="54"/>
+                                <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToTakePhotp:" destination="hQD-Ka-roP" eventType="touchUpInside" id="X5t-TW-wfX"/>
+                                    <segue destination="LyW-LW-qgQ" kind="show" identifier="BackToPhoto" id="PPx-Y7-jbL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-Kw-Fvh">
+                                <rect key="frame" x="286" y="734" width="79" height="54"/>
+                                <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendToDataBase:" destination="hQD-Ka-roP" eventType="touchUpInside" id="MAL-AJ-Hrw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-sg-pZ5">
+                                <rect key="frame" x="163" y="540" width="49" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="eFA-Lc-P9e"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.24382740259170532" magenta="0.24547533690929413" yellow="0.41313261134283885" black="0.34126533717441726" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="29e-oR-Pc1" firstAttribute="leading" secondItem="q3j-q6-eLn" secondAttribute="leading" constant="10" id="BiX-FC-20v"/>
+                            <constraint firstItem="TiN-sg-pZ5" firstAttribute="centerX" secondItem="pkR-Pd-g7O" secondAttribute="centerX" id="GFY-tp-YDY"/>
+                            <constraint firstAttribute="bottom" secondItem="29e-oR-Pc1" secondAttribute="bottom" constant="24" id="Hnu-tn-xCy"/>
+                            <constraint firstItem="q3j-q6-eLn" firstAttribute="trailing" secondItem="Txc-Kw-Fvh" secondAttribute="trailing" constant="10" id="MdX-4v-iSo"/>
+                            <constraint firstItem="Vg3-qJ-f7I" firstAttribute="centerX" secondItem="pkR-Pd-g7O" secondAttribute="centerX" id="aOd-Up-6ad"/>
+                            <constraint firstItem="q3j-q6-eLn" firstAttribute="bottom" secondItem="TiN-sg-pZ5" secondAttribute="bottom" constant="215" id="eh9-FR-gGE"/>
+                            <constraint firstItem="Vg3-qJ-f7I" firstAttribute="top" secondItem="q3j-q6-eLn" secondAttribute="top" constant="55" id="khg-hQ-PGZ"/>
+                            <constraint firstItem="Vg3-qJ-f7I" firstAttribute="leading" secondItem="q3j-q6-eLn" secondAttribute="leading" constant="75" id="oQb-pA-HL3"/>
+                            <constraint firstAttribute="bottom" secondItem="Txc-Kw-Fvh" secondAttribute="bottom" constant="24" id="rPd-mH-Q2g"/>
+                            <constraint firstItem="Txc-Kw-Fvh" firstAttribute="bottom" secondItem="29e-oR-Pc1" secondAttribute="bottom" id="tKM-DC-B4b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q3j-q6-eLn"/>
+                    </view>
+                    <connections>
+                        <outlet property="Back" destination="29e-oR-Pc1" id="gw6-hr-hAS"/>
+                        <outlet property="Send" destination="Txc-Kw-Fvh" id="e3o-0p-AmB"/>
+                        <outlet property="caregiverImage" destination="Vg3-qJ-f7I" id="lze-IL-Xf2"/>
+                        <outlet property="nameCaregiver" destination="TiN-sg-pZ5" id="Izd-1h-rcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIu-25-ASc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="1.4778325123152709"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="new1.png" width="31" height="26"/>
+        <image name="new_photo.jpg" width="26" height="26"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mHe-Oj-hVH"/>
+    </inferredMetricsTieBreakers>
 </document>
