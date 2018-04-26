@@ -11,16 +11,11 @@ import CoreImage
 class Takephoto: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     
-    @IBOutlet weak var PhotoLibrart: UIButton!
+    @IBOutlet weak var PhotoLibrary: UIButton!
     @IBOutlet weak var Camera: UIButton!
     
     @IBOutlet weak var ImageDisplay: UIImageView!
-    //  @IBOutlet weak var PhotoLibrary: UIButton!
-    
-  //  @IBOutlet weak var Camera: UIButton!
-    
 
- //   @IBOutlet weak var ImageDisplay: UIImageView!
     
     @IBOutlet weak var personPic: UIImageView!
     @IBOutlet weak var imageTake: UIImageView!
@@ -74,9 +69,6 @@ class Takephoto: UIViewController, UIImagePickerControllerDelegate, UINavigation
     } */
     
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        //  let im = UIImagePickerControllerOriginalImage
-        //  ImageDisplay.image = info[UIImagePickerControllerOriginalImage] as? UIImage;dismiss(animated: true, completion: nil)
-        //       print("past ImageDisplay.image")
         
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         let chosenImageView = UIImageView();
