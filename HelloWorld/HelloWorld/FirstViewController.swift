@@ -72,9 +72,9 @@ class FirstViewController: UIViewController,UIImagePickerControllerDelegate, UIN
                                 
                                 let probability:Double = prediction.facerecognitionProbability[predecitname]!
                                 // Fail the prediction if the propability is less than 0.85 ( This percentage need to be set after testing)
-                                    if probability < 0.90
+                                    if probability < 0.50
                                     {
-                                        nameCaregiver.text = " Unable To Recognize:Take a photo again "
+                                        nameCaregiver.text = "Unable To Recognize:Take a photo again"
                                         nameOfCaregiver=nameCaregiver.text
                                     }
                                     else
