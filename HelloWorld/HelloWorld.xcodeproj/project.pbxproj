@@ -23,6 +23,7 @@
 		B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A62072920E0024BF69 /* Assets.xcassets */; };
 		B9DCC3AA2072920E0024BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */; };
 		B9DCC57320750FEE0024BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */; };
+		C27D65C82092895500F8F21F /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C27D65C72092895400F8F21F /* bigicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B9DCC3A92072920E0024BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DCC3AB2072920E0024BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9DCC57220750FEE0024BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C27D65C72092895400F8F21F /* bigicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigicon.png; path = ../../../../Prototypes/start_screens/bigicon.png; sourceTree = "<group>"; };
 		EE195FB68FA70089944CCC2B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				B9DCC3A12072920E0024BF69 /* ViewController.swift */,
 				B9DCC3A32072920E0024BF69 /* Main.storyboard */,
 				B917FAD220860DEE00B65D9F /* FirstViewController.swift */,
+				C27D65C72092895400F8F21F /* bigicon.png */,
 				B917FAD420860FC500B65D9F /* TakephotoViewController.swift */,
 				B9DCC3A62072920E0024BF69 /* Assets.xcassets */,
 				B9DCC3A82072920E0024BF69 /* LaunchScreen.storyboard */,
@@ -185,6 +188,7 @@
 				B917FADF2087A03A00B65D9F /* new1.png in Resources */,
 				B917FAD920879F2A00B65D9F /* photolibrary.jpg in Resources */,
 				B9DCC3A72072920E0024BF69 /* Assets.xcassets in Resources */,
+				C27D65C82092895500F8F21F /* bigicon.png in Resources */,
 				B917FAE12087A07900B65D9F /* new_photo.jpg in Resources */,
 				B917FADD20879FCD00B65D9F /* new.png in Resources */,
 				B917FADB20879F5400B65D9F /* images.png in Resources */,

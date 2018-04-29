@@ -74,31 +74,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="J8F-k3-bqR">
-                                <rect key="frame" x="65" y="245" width="275" height="210.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MXd-A7-aDh">
+                                <rect key="frame" x="5" y="469" width="365" height="209"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="31" translatesAutoresizingMaskIntoConstraints="NO" id="9Rm-fA-hvR">
-                                        <rect key="frame" x="103" y="0.0" width="69.333333333333314" height="37.666666666666664"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="POI">
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="33" name="Georgia-BoldItalic"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-Xd-GzY">
-                                        <rect key="frame" x="76" y="93.666666666666686" width="123" height="30.333333333333329"/>
-                                        <color key="backgroundColor" red="0.67634537560599195" green="0.62584314346313474" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" image="new1.png">
+                                        <rect key="frame" x="136.66666666666666" y="0.0" width="92" height="84.666666666666671"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Camera">
                                                     <attributes>
-                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="NSColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="26" name=".SFNSDisplay"/>
                                                     </attributes>
                                                 </fragment>
@@ -113,14 +100,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isl-rh-0LX">
-                                        <rect key="frame" x="46" y="180" width="183" height="30.333333333333343"/>
-                                        <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="104" y="124.66666666666663" width="157" height="84.333333333333314"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="new_photo.jpg">
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Photo Library">
                                                     <attributes>
-                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="NSColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" metaFont="system" size="26"/>
                                                     </attributes>
                                                 </fragment>
@@ -133,12 +120,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="KIs-gv-JbZ">
+                                <rect key="frame" x="65" y="72" width="294" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cyan="0.24382740259170532" magenta="0.24547533690929413" yellow="0.41313261134283885" black="0.34126533717441726" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J8F-k3-bqR" firstAttribute="centerY" secondItem="pcS-dl-zTU" secondAttribute="centerY" constant="-60.75" id="4uq-s6-spm"/>
-                            <constraint firstItem="J8F-k3-bqR" firstAttribute="centerX" secondItem="pcS-dl-zTU" secondAttribute="centerX" constant="15" id="T8e-Vz-rEH"/>
-                            <constraint firstItem="J8F-k3-bqR" firstAttribute="leading" secondItem="pcS-dl-zTU" secondAttribute="leading" constant="65" id="fEW-gO-zSf"/>
+                            <constraint firstItem="MXd-A7-aDh" firstAttribute="leading" secondItem="pcS-dl-zTU" secondAttribute="leading" constant="5" id="CHl-Ux-x7P"/>
+                            <constraint firstItem="pcS-dl-zTU" firstAttribute="trailing" secondItem="MXd-A7-aDh" secondAttribute="trailing" constant="5" id="TLz-ZA-xct"/>
+                            <constraint firstItem="MXd-A7-aDh" firstAttribute="top" secondItem="pcS-dl-zTU" secondAttribute="top" constant="425" id="ZhV-Oc-2u3"/>
+                            <constraint firstItem="pcS-dl-zTU" firstAttribute="bottom" secondItem="MXd-A7-aDh" secondAttribute="bottom" constant="100" id="jgo-hT-3mK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pcS-dl-zTU"/>
                     </view>
@@ -150,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufh-IV-nos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159.375" y="3.1690140845070425"/>
+            <point key="canvasLocation" x="-160.80000000000001" y="2.9556650246305418"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="P9E-ye-6KV">
@@ -160,18 +152,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-qJ-f7I">
-                                <rect key="frame" x="75" y="99" width="224" height="224"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-qJ-f7I">
+                                <rect key="frame" x="56" y="133" width="276" height="314"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="224" id="LZi-7Y-e7s"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-oR-Pc1">
-                                <rect key="frame" x="10" y="734" width="75" height="54"/>
-                                <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-oR-Pc1">
+                                <rect key="frame" x="56" y="612" width="75" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -179,20 +171,20 @@
                                     <segue destination="LyW-LW-qgQ" kind="show" identifier="BackToPhoto" id="PPx-Y7-jbL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-Kw-Fvh">
-                                <rect key="frame" x="286" y="734" width="79" height="54"/>
-                                <color key="backgroundColor" red="0.67634537560599195" green="0.60893466132027763" blue="0.46373376846313474" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-Kw-Fvh">
+                                <rect key="frame" x="253" y="612" width="79" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="SendToDataBase:" destination="hQD-Ka-roP" eventType="touchUpInside" id="MAL-AJ-Hrw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-sg-pZ5">
-                                <rect key="frame" x="163" y="540" width="49" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-sg-pZ5">
+                                <rect key="frame" x="56" y="483" width="276" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="eFA-Lc-P9e"/>
                                 </constraints>
@@ -204,10 +196,10 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.448612542" blue="0.45717157660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cyan="0.24382740259170532" magenta="0.24547533690929413" yellow="0.41313261134283885" black="0.34126533717441726" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="29e-oR-Pc1" firstAttribute="leading" secondItem="q3j-q6-eLn" secondAttribute="leading" constant="10" id="BiX-FC-20v"/>
                             <constraint firstItem="TiN-sg-pZ5" firstAttribute="centerX" secondItem="pkR-Pd-g7O" secondAttribute="centerX" id="GFY-tp-YDY"/>
@@ -235,10 +227,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="new1.png" width="31" height="26"/>
-        <image name="new_photo.jpg" width="26" height="26"/>
+        <image name="bigicon.png" width="2481" height="3507"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mHe-Oj-hVH"/>
+        <segue reference="LNA-Ie-WmT"/>
     </inferredMetricsTieBreakers>
 </document>
