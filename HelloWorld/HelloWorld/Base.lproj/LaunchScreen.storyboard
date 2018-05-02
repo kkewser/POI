@@ -25,7 +25,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="KFi-OE-SQg">
                                         <rect key="frame" x="0.0" y="0.0" width="279" height="258.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to POI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwP-Bl-LXs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Välkommen till POI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwP-Bl-LXs">
                                         <rect key="frame" x="0.0" y="258.5" width="279" height="258.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
                                         <nil key="textColor"/>
@@ -50,6 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bigicon.png" width="2481" height="3507"/>
+        <image name="bigicon.png" width="1449" height="2048"/>
     </resources>
 </document>

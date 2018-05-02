@@ -50,7 +50,24 @@ class TakephotoViewController: UIViewController , UIImagePickerControllerDelegat
     {
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         let chosenImageView = UIImageView();
-        chosenImageView.image = chosenImage
+        
+       
+            
+        if (chosenImage.imageOrientation == UIImageOrientation.up) {
+                chosenImageView.image = chosenImage
+            }
+         else
+        {
+            UIGraphicsBeginImageContextWithOptions(chosenImage.size, false, chosenImage.scale);
+            let rect = CGRect(x: 0, y: 0, width: chosenImage.size.width, height: chosenImage.size.height)
+            chosenImage.draw(in: rect)
+            
+            let normalizedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+            UIGraphicsEndImageContext();
+             chosenImageView.image = normalizedImage;
+        }
+       // chosenImageView.image = chosenImage
+        
         // To let the detect function return before continuing with the next line
         let dispatchgroup = DispatchGroup()
             print(":D")
@@ -80,57 +97,69 @@ class TakephotoViewController: UIViewController , UIImagePickerControllerDelegat
         {
             return
         }
+        print(_uiimageView.image)
+        print(personciImage)
         print("personciImage")
-        let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+      //  let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+        let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyLow]
         let faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: accuracy)
         let faces = faceDetector?.features(in: personciImage)
-       
-        // For converting the Core Image Coordinates to UIView Coordinates
-        let ciImageSize = personciImage.extent.size
-        var transform = CGAffineTransform(scaleX: 1, y: -1)
-        transform = transform.translatedBy(x: 0, y: -ciImageSize.height)
-        ///////////////////////////////// This function  has a problem //////////////////////
-        for face in faces as! [CIFaceFeature] {
+        print(faces)
+        if (faces == [])
+        {
+            imageToFR = _uiimageView.image
+        }
+        else {
+                // For converting the Core Image Coordinates to UIView Coordinates
+                let ciImageSize = personciImage.extent.size
+                var transform = CGAffineTransform(scaleX: 1, y: -1)
+                transform = transform.translatedBy(x: 0, y: -ciImageSize.height)
+                ///////////////////////////////// This function  has a problem //////////////////////
+    
+                for face in faces as! [CIFaceFeature] {
       
-            print("Found bounds are \(face.bounds)")
+                    print("Found bounds are \(face.bounds)")
             
-            // Apply the transform to convert the coordinates
-            var faceViewBounds = face.bounds.applying(transform)
-            print("faceViewBounds after transformation are \(faceViewBounds)")
+                    // Apply the transform to convert the coordinates
+                    var faceViewBounds = face.bounds.applying(transform)
+                    print("faceViewBounds after transformation are \(faceViewBounds)")
             
             
-            //------------
-            //Placing coordinates to Rect for cropping
-            let xF = faceViewBounds.minX
-            let yF = faceViewBounds.minY
-            let widthF = faceViewBounds.width * 0.95
-            let heightF = faceViewBounds.height * 0.95
-            let rect = CGRect(x:xF,y: yF, width: widthF, height:heightF)
-            print("Got past initialization of rect")
-            print("x: \(xF)")
-            print("y: \(yF)")
-            print("width: \(widthF)")
-            print("height: \(heightF)")
+                    //------------
+                    //Placing coordinates to Rect for cropping
+                    let xF = faceViewBounds.minX
+                    let yF = faceViewBounds.minY
+                    let widthF = faceViewBounds.width * 0.95
+                    let heightF = faceViewBounds.height * 0.95
+                    let rect = CGRect(x:xF,y: yF, width: widthF, height:heightF)
+                    print("Got past initialization of rect")
+                    print("x: \(xF)")
+                    print("y: \(yF)")
+                    print("width: \(widthF)")
+                    print("height: \(heightF)")
      
             
-            if face.hasLeftEyePosition {
-                print("Left eye bounds are \(face.leftEyePosition)")
-            }
+                    if face.hasLeftEyePosition {
+                        print("Left eye bounds are \(face.leftEyePosition)")
+                    }
             
-            if face.hasRightEyePosition {
-                print("Right eye bounds are \(face.rightEyePosition)")
-            }
+                    if face.hasRightEyePosition {
+                        print("Right eye bounds are \(face.rightEyePosition)")
+                    }
             
-            // let rect = CGRect(x:85.0,y: 333.0,width: 372.0,height: 372.0)
-            // print("Got past initialization of rect")
+                    // let rect = CGRect(x:85.0,y: 333.0,width: 372.0,height: 372.0)
+                    // print("Got past initialization of rect")
             
-            let croppedPhoto = crop(image: _uiimageView.image!, cropRect: rect)
-            print("Got past let croppedPhoto and CROP")
-            //ImageDisplay.image = croppedPhoto
-            imageToFR=croppedPhoto
+                    let croppedPhoto = self.crop(image: _uiimageView.image!, cropRect: rect)
+                    print("Got past let croppedPhoto and CROP")
+                    //ImageDisplay.image = croppedPhoto
+                    imageToFR=croppedPhoto
            
-            print("Got past ImageDisplay")
-            //save(croppedPhoto!)
+           
+                    print("Got past ImageDisplay")
+                    //save(croppedPhoto!)
+            
+            }
             
         }
             print("reach here")

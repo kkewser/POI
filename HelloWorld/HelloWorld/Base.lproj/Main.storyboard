@@ -159,10 +159,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-oR-Pc1">
-                                <rect key="frame" x="56" y="612" width="75" height="54"/>
+                                <rect key="frame" x="56" y="602" width="120" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Tillbaka">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -172,10 +172,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-Kw-Fvh">
-                                <rect key="frame" x="253" y="612" width="79" height="54"/>
+                                <rect key="frame" x="227" y="612" width="105" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Send">
+                                <state key="normal" title="Skicka">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -227,7 +227,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bigicon.png" width="2481" height="3507"/>
+        <image name="bigicon.png" width="1449" height="2048"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LNA-Ie-WmT"/>
